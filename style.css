@@ -654,6 +654,15 @@ section .title::after {
   background: none;
   border: 2px solid green;
 }
+.edu {
+  font-size: 28px;
+  color: rgb(7, 67, 196);
+  margin-bottom: 0.7cm;
+}
+.msc, .bsc {
+  font-weight: bold;
+  color: green;
+}
 
 /* footer section styling */
 footer {
