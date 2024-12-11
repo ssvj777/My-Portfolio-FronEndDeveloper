@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 
@@ -45,7 +46,7 @@
                     <a href="#certifications" class="menu-btn">Certifications</a>
                 </li>
                 <li>
-                    <a href="#contact" class="menu-btn">Contact</a>
+                    <a href="#contact" class="menu-btn">Contact </a>
                 </li>
             </ul>
             <div class="menu-btn">
@@ -318,28 +319,31 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="send-message.php" method="POST">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea name="message" cols="30" rows="10" placeholder="Describe Project..." required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
+                    <div class="edu"><h1>Education</h1></div>
+                    <p>MSc <span class="msc"></span>,</p>
+                    <p>Bharathiar University (2025).</p><br>
+                    <p>BSc <span class="bsc"></span>,</p>
+                    <p>Bharathidasan College of Arts and Science (2023).</p><br><br><br>
+
+                    <script>
+                        // Typing animation for Cyber Security
+                        new Typed(".msc", {
+                        strings: ["Cyber Security"],
+                        typeSpeed: 100,
+                        backSpeed: 60,
+                        loop: true,
+                        });
+
+                        // Typing animation for Computer Science
+                        new Typed(".bsc", {
+                        strings: ["Computer Science"],
+                        typeSpeed: 100,
+                        backSpeed: 60,
+                        loop: true,
+                        });
+                    </script>
                 </div>
                 
             </div>
