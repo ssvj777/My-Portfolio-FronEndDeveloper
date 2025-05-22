@@ -15,6 +15,7 @@ body{
 html {
   scroll-behavior: smooth;
 }
+
 /* Navbar Styling*/
 .navbar {
   position: fixed;
@@ -75,6 +76,7 @@ html {
   color: #000;
 }
 
+
 /* Menu Button Styling */
 .menu-btn {
   color: white;
@@ -82,7 +84,6 @@ html {
   cursor: pointer;
   display: none;
 }
-
 /* Scroll button styling */
 .scroll-up-btn {
   position: fixed;
@@ -116,6 +117,7 @@ html {
   transition: opacity 0.1s ease;
   opacity: 1 !important;
 }
+
 
 /* Home Section Styling */
 .home {
@@ -166,6 +168,7 @@ html {
   color: white;
   background: #000;
 }
+
 
 /* General Section Styling */
 section {
@@ -226,67 +229,83 @@ section .title::after {
   background: #fff;
 }
 
+
 /* Soft Skills Styling */
-.skills-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.skills {
+  background:  #1f1f1f;
+  color: #fff;
+  padding: 100px 0;
 }
 
+.skills .title::before {
+  background: #00f7ff;
+}
+.skills .title::after {
+  content: "what I do best";
+  background: transparent;
+}
+
+/* Skill Cards */
 .skills-category {
-  background-color: #222; /* Slightly lighter than #111 for contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: fadeInUp 1s ease;
 }
 
 .skills-category h3 {
   font-size: 1.8rem;
-  color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
+  color: #00f7ff;
 }
 
-.soft-skills {
+.skill-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 15px;
 }
 
-.soft-skills .skill {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+.skill {
   font-size: 1rem;
-  text-align: center;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.soft-skills .skill:hover {
-  transform: scale(1.05);
-  background-color: rgb(7, 67, 196);
+  padding: 12px 24px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
-/* Technical Skills Styling */
-.technical-skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.technical-skills a img {
-  width: 80px;
-  transition: transform 0.2s, filter 0.2s;
-}
-
-.technical-skills a img:hover {
+.skill:hover {
+  background: #00f7ff;
+  color: #111;
   transform: scale(1.1);
-  filter: brightness(1.2);
+  border-color: #00f7ff;
+  box-shadow: 0 0 15px #00f7ff, 0 0 25px #00f7ff;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -385,9 +404,10 @@ section .title::after {
   color: #0097a7;
 }
 
+
 /* skills section styling */
 .skills .title::after {
-  background: #111;
+  background: #1f1f1f;
   content: "what i have & know";
 }
 .skills .skills-content .column {
@@ -430,110 +450,178 @@ section .title::after {
   margin: 5px;
 }
 
-/* Project section styling */
+
+/* Projects section styling */
+.projects {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 100px 0;
+}
+
 .projects .title::after {
   content: "check my work";
+  background: #1c1c1c;
 }
 
-.projects .carousel .card {
-  background: #222;
-  border-radius: 10px;
-  padding: 25px 20px;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
   text-align: center;
-  transition: all 0.3s ease;
-}
-.projects .carousel .card:hover {
-  background: rgb(48, 48, 48);
-}
-.projects .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-.projects .carousel .card:hover .box {
-  transform: scale(0.99);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects .carousel .card p {
-  font-size: 16px;
-  padding-top: 10px;
-  color: #fff;
-}
-.projects .carousel .card img {
-  height: 250px;
-  width: 280px;
-  object-fit: fill;
-  border-radius: 10px;
-  border: 2px solid rgb(7, 67, 196);
-  transition: all 0.3s ease;
-}
-.projects .carousel .card:hover img {
-  border-color: #fff;
-}
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid rgb(7, 67, 196) !important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover {
-  background: rgb(7, 67, 196) !important;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00f7ff;
 }
 
-
-.certifications {
-  padding: 50px 0;
-  background: #f9f9f9;
-}
-.certifications .title::after {
-  content: "what i have done";
-}
-
-.certifications .title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.certifications .carousel {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.certifications .card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-  text-align: center;
-}
-
-.certifications .card img {
+.project-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #00f7ff;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
 }
 
-.certifications .card p {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
+.project-card:hover img {
+  border-color: #fff;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  color: #00f7ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-links a {
+  padding: 8px 14px;
+  background: #00f7ff;
+  color: #111;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+/* certifications section styling */
+.certifications {
+  padding: 100px 0;
+  background: #222;
+  color: #fff;
+}
+
+.certifications .title::after {
+  content: "what I have done";
+  background: #222;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+.cert-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #00f7ff;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.cert-card:hover img {
+  border-color: #fff;
+}
+
+.cert-card h3 {
+  font-size: 1.2rem;
+  color: #00f7ff;
+  margin-bottom: 8px;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.cert-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #00f7ff;
+  color: #111;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cert-btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
