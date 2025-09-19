@@ -784,6 +784,9 @@ footer a {
     display: grid;
     gap: 28px;
   }
+  .contact .education {
+  margin-right: 0px;
+  }
   .contact .contactContent .contactDetails,
   .contact .contactContent .education {
     width: 100%;
