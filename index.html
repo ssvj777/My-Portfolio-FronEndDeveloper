@@ -1,392 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vijay Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
 
-<body>
+    <!-- StyleSheet Link -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Scroll Button start -->
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-double-up"></i>
+    <div class="scrollBtn">
+      <i class="fas fa-angle-double-up"></i>
     </div>
-    <!-- Scroll Button end -->
-    <!-- Navbar Start-->
+
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="#">Portfo<span>lio...</span>
-                </a>
-            </div>
-            <ul class="menu">
-                <li>
-                    <a href="#home" class="menu-btn">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="menu-btn">About</a>
-                </li>
-                <li>
-                    <a href="#skills" class="menu-btn">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects" class="menu-btn">Projects</a>
-                </li>
-                <li>
-                    <a href="#certifications" class="menu-btn">Certifications</a>
-                </li>
-                <li>
-                    <a href="#contact" class="menu-btn">Contact </a>
-                </li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="max-width">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <a href="#">Portfo<span>lio...</span> </a>
         </div>
+
+        <!-- Navbar Toggle Buttton -->
+        <div class="showNavbar">
+          <i class="togglebtn fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navbar Close Buttton -->
+        <div class="closeNavbar">
+          <i class="xMark fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- Navbar List Content -->
+        <div class="navbarList">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#Certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </nav>
-    <!-- Navbar End -->
+
+    <!-- Side Navbar -->
+    <nav class="sideNavbar">
+      <div class="sideNavbarList">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#Certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
     <!-- Home Section Start -->
     <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello 👋 I'm</div>
-                <div class="text-2">VIJAY SS</div>
-                <div class="text-3">And I'm a <span class="typing"></span>
-                </div>
-                <!-- <a class="web" href="#contact">I need a website <i class="fad fa-angle-right"></i> -->
-                </a>
-                <a href="https://www.linkedin.com/in/ssvj777/" target="_blank" rel="noreferrer">I'm looking to hire <i
-                        class="fad fa-angle-right"></i>
-                </a>
-            </div>
+      <div class="max-width">
+        <div class="homeContent">
+          <div class="text1">Hello 👋 I'm</div>
+          <div class="text2">VIJAY SS</div>
+          <div class="text3">And I'm a <span class="typing"></span></div>
+          <a
+            href="https://www.linkedin.com/in/ssvj777/"
+            target="_blank"
+            rel="noreferrer"
+            >I'm looking to hire <i class="fad fa-angle-right"></i>
+          </a>
         </div>
+      </div>
     </section>
     <!-- Home Section End -->
+
     <!-- About section start -->
     <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title fadein">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="img/Vijay.jpg" alt="vijay" style="width: 300px; height: 400px;">
-                    <div>
-                        <div class="wrapper">
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://www.linkedin.com/in/ssvj777/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-linkedin"></i>
-                                </div>
-                                <span>LinkedIn </a>
-                                </span>
-                            </div>
-                            <!-- <div class="buttonmob">
-                                <div class="button1">
-                                    <div class="icon">
-                                        <a href="https://medium.com/@" target="_blank" rel="noreferrer">
-                                            <i class="fab fa-medium"></i>
-                                    </div>
-                                    <span>Medium </a>
-                              </span>
-                                </div>
-                            </div> -->
-                            <div class="buttonmob1"></div>
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://github.com/ssvj777" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-github"></i>
-                                </div>
-                                <span>Github </a>
-                                </span>
-                            </div>
-                        </div>
+      <div class="max-width">
+        <h2 class="titleContent">About me</h2>
+
+        <div class="aboutContent">
+          <div class="aboutImage">
+            <img src="./assets/img/Vijay.jpg" alt="VIJAY" />
+            <div>
+              <div class="wrapper">
+                <div class="wrapperIcons">
+                  <a
+                    href="https://www.linkedin.com/in/ssvj777/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div class="iconContent">
+                      <div class="icon">
+                        <i class="fab fa-linkedin"></i>
+                      </div>
+                      <span>LinkedIn </span>
                     </div>
-                </div>
-                <div class="column right">
-                    <div class="text">I'm a Vijay and <span class="break">I'm a <span class="typing2"></span>
-                        </span>
+                  </a>
+
+                  <a
+                    href="https://github.com/ssvj777"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><div class="iconContent">
+                      <div class="icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <span>Github </span>
                     </div>
-                    <p>Passionate and self-taught Front-End Developer with solid expertise in React.js and modern JavaScript. Skilled in building responsive, interactive, and user-friendly applications using component-based architecture and API integration. Looking for an opportunity to contribute to real-world projects, grow as a developer, and be part of an innovative team.</p>
-                    </a>
+                  </a>
+
+                  <a
+                    href="mailto:vijayssdev@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><div class="iconContent">
+                      <div class="icon">
+                        <i class="fas fa-envelope email-icon"></i>
+                      </div>
+                      <span>Email </span>
+                    </div>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="aboutDetails">
+            <div class="text">
+              I'm a VIJAY SS and
+              <span class="break">I'm a <span class="typing2"></span> </span>
+            </div>
+            <div>
+              <p>
+                Seeking a Front-End Developer role where I can leverage my HTML,
+                CSS, JavaScript (ES6+), React.js sills and modern UI frameworks
+                to build scalable, responsive, and user-friendly web
+                applications. Looking to grow in a tech-driven team and learn
+                more every day.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- about section End -->
     <!-- Skills section start -->
     <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title fadein">My Skills</h2>
-            <div class="skills-content">
+      <div class="max-width">
+        <h2 class="title titleContent">My Skills</h2>
+        <div class="skillsContent">
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/HTML.png"
+              class="skillIcons"
+              alt="HTML"
+            />
+            <h4>HTML5</h4>
+          </div>
 
-                <!-- Technical Skills -->
-                <div class="skills-category glass-effect">
-                    <h3> Technical Skills</h3>
-                    <div class="skill-grid">
-                        <div class="skill neon">HTML5</div>
-                        <div class="skill neon">CSS3</div>
-                        <div class="skill neon">JavaScript (ES6+)</div>
-                        <div class="skill neon">React.js</div>
-                        <div class="skill neon">Vite</div>
-                        <div class="skill neon">JSX</div>
-                        <div class="skill neon">Bootstrap Framework</div>
-                        <div class="skill neon">Material UI</div>
-                        <div class="skill neon">Redux Toolkit</div>
-                        <div class="skill neon">Axios</div>
-                        <div class="skill neon">PHP</div>
-                        <div class="skill neon">MySQL</div>
-                        <div class="skill neon">Python</div>
-                        <div class="skill neon">Git/GitHub</div>
-                        <div class="skill neon">VS Code</div>
-                    </div>
-                </div>
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/CSS.png"
+              class="skillIcons"
+              alt="CSS"
+            />
+            <h4>CSS3</h4>
+          </div>
 
-                <!-- Soft Skills -->
-                <div class="skills-category glass-effect">
-                    <h3> Soft Skills</h3>
-                    <div class="skill-grid">
-                        <div class="skill neon">💡 Problem-solving</div>
-                        <div class="skill neon">🧠 Analytical Thinking</div>
-                        <div class="skill neon">🤝 Team Collaboration</div>
-                        <div class="skill neon">👤 Leadership</div>
-                        <div class="skill neon">💬 Communication</div>
-                        <div class="skill neon">⏰ Time Management</div>
-                    </div>
-                </div>
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/javascript.png"
+              class="skillIcons"
+              alt="JavaScript"
+            />
+            <h4>JavaScript</h4>
+          </div>
 
-            </div>
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/React.png"
+              class="skillIcons"
+              alt="React.js"
+            />
+            <h4>React.js</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/Vite.png"
+              class="skillIcons"
+              alt="Vite"
+            />
+            <h4>Vite</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/Bootstrap.png"
+              class="skillIcons"
+              alt="Bootstrap"
+            />
+            <h4>Bootstrap</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/MaterialUI.png"
+              class="skillIcons"
+              alt="Material UI"
+            />
+            <h4>Material UI</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/Redux.png"
+              class="skillIcons"
+              alt="Redux"
+            />
+            <h4>Redux</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/Python.png"
+              class="skillIcons"
+              alt="Python"
+            />
+            <h4>Python</h4>
+          </div>
+
+          <div class="skillCard">
+            <img
+              src="./assets/img/skills/MySQL.png"
+              class="skillIcons"
+              alt="MySQL"
+            />
+            <h4>MySQL</h4>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Skills section end -->
-
 
     <!-- Project section start -->
     <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title fadein">My Projects</h2>
-            <div class="project-grid">
-
-                <!-- Project Card -->
-                <div class="project-card glass-effect">
-                    <img src="img/ReactProject.png" alt="React E-Commerce Project">
-                    <h3>React E-Commerce Project</h3>
-                    <p>React.js, Vite, HTML, CSS, JavaScript</p>
-                    <div class="project-links">
-                        <a href="https://ssvj777-reactproject.netlify.app/" target="_blank"> Live </a>
-                        <a href="https://github.com/ssvj777/ReactProject" target="_blank"> GitHub </a>
-                    </div>
-                </div>
-
-                <div class="project-card glass-effect">
-                    <img src="img/Shoppiee.png" alt="Shoppiee Website">
-                    <h3>Shoppiee Website</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                    <div class="project-links">
-                        <a href="https://ssvj777-shoppiee.netlify.app/" target="_blank"> Live </a>
-                        <a href="https://github.com/ssvj777/Shoppiee..." target="_blank"> GitHub </a>
-                    </div>
-                </div>
-                
-                <div class="project-card glass-effect">
-                    <img src="img/avms.jpg" alt="Apartment Visitors Management System">
-                    <h3>Apartment Visitors Management System</h3>
-                    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
-                    <div class="project-links">
-                        <a href="https://ssvj777-avms.netlify.app/" target="_blank"> Live </a>
-                        <a href="https://github.com/ssvj777/AVMS" target="_blank"> GitHub </a>
-                    </div>
-                </div>
-
-                <div class="project-card glass-effect">
-                    <img src="img/DEAT.jpg" alt="Digital Evidence Analyzer Tool">
-                    <h3>Digital Evidence Analyzer Tool</h3>
-                    <p>Python</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ssvj777/Digital-Evidence-Analyzer-Tool" target="_blank"> GitHub </a>
-                    </div>
-                </div>
-
-                <div class="project-card glass-effect">
-                    <img src="img/BFA.jpg" alt="Brute Force Analyzer Tool">
-                    <h3>Brute Force System Analyzer Tool</h3>
-                    <p>Python</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ssvj777/Brute-Force-Analyzer-Tool" target="_blank"> GitHub </a>
-                    </div>
-                </div>
-
+      <div class="max-width">
+        <h2 class="title titleContent">My Projects</h2>
+        <div class="projectsContents">
+          <div class="projectDetails">
+            <img
+              src="./assets/img/projects/ReactProject.png"
+              alt="React E-Commerce Project"
+            />
+            <div class="projectInfo">
+              <h3>React E-Commerce Project</h3>
+              <p>React.js, Vite, HTML, CSS, JavaScript</p>
+              <a
+                href="https://ssvj777-reactproject.netlify.app/"
+                target="_blank"
+                >View Project</a
+              >
             </div>
-        </div>
-    </section>
-    <!-- Project section end -->
+          </div>
 
-
-    <!-- Certification Section Start -->
-    <section class="certifications" id="certifications">
-        <div class="max-width">
-            <h2 class="title fadein">My Certifications</h2>
-            <div class="cert-grid">
-
-                <!-- Certification Card -->
-
-                <div class="cert-card glass-effect">
-                    <img src="img/Full_Stack.jpg" alt="Full-Stack Development">
-                    <h3>Full-Stack Development</h3>
-                    <p>Issued by: Live-wire, Erode</p>`
-                    <a href="https://drive.google.com/file/d/15FWtCFQK7KZGRsgP5HWh9YAmOjL1IC1P/view?usp=drivesdk"
-                        target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-
-                <div class="cert-card glass-effect">
-                    <img src="img/Python.jpg" alt="Python Basics">
-                    <h3>Python Basics</h3>
-                    <p>Issued by: SCALER </p>
-                    <a href="https://drive.google.com/file/d/1ASyz31A-iIbyiUpecNphMacixucyUtxm/view?usp=drivesdk"
-                        target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-                <div class="cert-card glass-effect">
-                    <img src="img/Networking Basics.jpg" alt="Networking Basics">
-                    <h3>Networking Basics</h3>
-                    <p>Issued by: CISCO </p>
-                    <a href="https://drive.google.com/file/d/1Em7cm9YVzW840tKtvNQ3mJPn0rGahVoL/view?usp=drive_link"
-                        target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
-                <div class="cert-card glass-effect">
-                    <img src="img/cyber security.png" alt="Basics of Cyber Security">
-                    <h3>Basics of Cyber Security</h3>
-                    <p>Issued by: NPTEL</p>
-                    <a href="https://drive.google.com/file/d/1V3JBj8_qQiFfPkcFtqSSLbD7167MBz7j/view?usp=sharing"
-                        target="_blank" class="cert-btn">View Certificate</a>
-                </div>
-
+          <div class="projectDetails">
+            <img
+              src="./assets/img/projects/Shoppiee.png"
+              alt="Shoppiee Website"
+            />
+            <div class="projectInfo">
+              <h3>Shoppiee Website</h3>
+              <p>HTML, CSS, JavaScript</p>
+              <a href="https://ssvj777-shoppiee.netlify.app/" target="_blank"
+                >View Project</a
+              >
             </div>
+          </div>
+          <div class="projectDetails">
+            <img src="./assets/img/projects/avms.jpg" alt="AVMS" />
+            <div class="projectInfo">
+              <h3>Apartment Visitors Management System</h3>
+              <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+              <a href="https://ssvj777-avms.netlify.app/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <div class="projectDetails">
+            <img
+              src="./assets/img/projects/DEAT.jpg"
+              alt="Digital Evidence System Analyzer Tool"
+            />
+            <div class="projectInfo">
+              <h3>Digital Evidence System Analyzer Tool</h3>
+              <p>Python</p>
+              <a
+                href="https://github.com/ssvj777/Digital-Evidence-Analyzer-Tool"
+                target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="projectDetails">
+            <img
+              src="./assets/img/projects/BFA.jpg"
+              alt="Brute Force System Analyzer Tool"
+            />
+            <div class="projectInfo">
+              <h3>Brute Force System Analyzer Tool</h3>
+              <p>Python</p>
+              <a
+                href="https://github.com/ssvj777/Brute-Force-Analyzer-Tool"
+                target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Certification Section End -->
 
+    <!-- Certifications section start -->
+    <section class="Certifications" id="Certifications">
+      <div class="max-width">
+        <h2 class="title titleContent">My Certifications</h2>
+        <div class="certificationsContent">
+          <div class="certificationDetails">
+            <img
+              src="./assets/img/certifications/FullStack.jpg"
+              alt="Full-Stack Development"
+            />
+            <div class="certificationInfo">
+              <h3>Full-Stack Development</h3>
+              <p>Issued by: Live-wire, Erode</p>
+              <a
+                href="https://drive.google.com/file/d/15FWtCFQK7KZGRsgP5HWh9YAmOjL1IC1P/view?usp=drivesdk"
+                target="_blank"
+                >View Certificate</a
+              >
+            </div>
+          </div>
 
+          <div class="certificationDetails">
+            <img
+              src="./assets/img/certifications/Python.jpg"
+              alt="Python Basics"
+            />
+            <div class="certificationInfo">
+              <h3>Python Basics</h3>
+              <p>Issued by: SCALER</p>
+              <a
+                href="https://drive.google.com/file/d/1ASyz31A-iIbyiUpecNphMacixucyUtxm/view?usp=drivesdk"
+                target="_blank"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="certificationDetails">
+            <img
+              src="./assets/img/certifications/Networking Basics.jpg"
+              alt="Networking Basics"
+            />
+            <div class="certificationInfo">
+              <h3>Networking Basics</h3>
+              <p>Issued by: CISCO</p>
+              <a
+                href="https://drive.google.com/file/d/1Em7cm9YVzW840tKtvNQ3mJPn0rGahVoL/view?usp=drive_link"
+                target="_blank"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="certificationDetails">
+            <img
+              src="./assets/img/certifications/Cybersecurity.png"
+              alt="Basics of Cyber Security"
+            />
+            <div class="certificationInfo">
+              <h3>Basics of Cyber Security</h3>
+              <p>Issued by: NPTEL</p>
+              <a
+                href="https://drive.google.com/file/d/1V3JBj8_qQiFfPkcFtqSSLbD7167MBz7j/view?usp=sharing"
+                target="_blank"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact section start -->
     <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title fadein">Contact Me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Reach Out to me!</div>
-                    <p></p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">VIJAY SS</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Tirupur, TamilNadu</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope email-icon"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:ssvj@gmail.com"
-                                        target="_blank">ssvj777@gmail.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text1">Stay Connected</div>
-                    <div>
-                        <div class="wrapper">
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://www.linkedin.com/in/ssvj777/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-linkedin"></i>
-                                </div>
-                                <span>LinkedIn </a>
-                                </span>
-                            </div>
-                            <!-- <div class="buttonmob">
-                                <div class="button1">
-                                    <div class="icon">
-                                        <a href="https://medium.com/@ssvj777" target="_blank" rel="noreferrer">
-                                            <i class="fab fa-medium"></i>
-                                    </div>
-                                    <span>Medium </a>
-                              </span>
-                                </div>
-                            </div> -->
-                            <div class="buttonmob1"></div>
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://github.com/ssvj777" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-github"></i>
-                                </div>
-                                <span>Github </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="max-width">
+        <h2 class="title titleContent">Contact Me</h2>
+        <div class="contactContent">
+          <div class="contactDetails">
+            <div class="text">Reach Out to me!</div>
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="sub-title">VIJAY SS</div>
                 </div>
-
-                <div class="column right">
-                    <div class="edu">
-                        <h1>Education</h1>
-                    </div>
-                    <p>MSc <span class="msc"></span>,</p>
-                    <p>Bharathiar University, Coimbatore (2025)</p><br>
-                    <p>BSc <span class="bsc"></span>,</p>
-                    <p>Bharathidasan College of Arts and Science, Erode (2023)</p><br><br><br>
-
-                    <script>
-                        // Typing animation for Cyber Security
-                        new Typed(".msc", {
-                            strings: ["Cyber Security"],
-                            typeSpeed: 100,
-                            backSpeed: 60,
-                            loop: true,
-                        });
-
-                        // Typing animation for Computer Science
-                        new Typed(".bsc", {
-                            strings: ["Computer Science"],
-                            typeSpeed: 100,
-                            backSpeed: 60,
-                            loop: true,
-                        });
-                    </script>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Address</div>
+                  <div class="sub-title">Coimbatore, TamilNadu</div>
                 </div>
-
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope email-icon"></i>
+                <div class="info">
+                  <div class="email">
+                    <div class="head">Email</div>
+                    <div class="sub-title">
+                      <a href="mailto:vijayssdev@gmail.com" target="_blank"
+                        >vijayssdev@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="text1">Stay Connected</div>
+            <div>
+              <div class="wrapper">
+                <div class="wrapperIcons">
+                  <a
+                    href="https://www.linkedin.com/in/ssvj777/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div class="iconContent">
+                      <div class="icon">
+                        <i class="fab fa-linkedin"></i>
+                      </div>
+                      <span>LinkedIn </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://github.com/ssvj777"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><div class="iconContent">
+                      <div class="icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <span>Github </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="mailto:vijayssdev@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><div class="iconContent">
+                      <div class="icon">
+                        <i class="fas fa-envelope email-icon"></i>
+                      </div>
+                      <span>Email </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education">
+            <div>
+              <h1>Education</h1>
+            </div>
+            <div class="degree">
+              <p>MSc <span class="msc"></span></p>
+              <p>Bharathiar University, Coimbatore (2025)</p>
+              <br />
+              <p>BSc <span class="bsc"></span></p>
+              <p>Bharathidasan College of Arts and Science, Erode (2023)</p>
+              <br /><br /><br />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Contact section end -->
+
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/ssvj777/" target="_blank" rel="noreferrer">Vijay</a> |
-            <span class="far fa-copyright"></span> <span id="year">
+      <h4>
+        Created By
+        <a
+          href="https://www.linkedin.com/in/ssvj777/"
+          target="_blank"
+          rel="noreferrer"
+          >VIJAY</a
+        >
+        | <i class="fa fa-copyright" aria-hidden="true"></i>
+        <span id="year"></span>
+      </h4>
     </footer>
-    <!-- footer section end -->
-    <!-- External Javascript File start-->
-    <script src="script.js" async></script>
-    <!-- External Javascript File end-->
-</body>
 
+    <!-- External Typed js script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- External Javascript File start-->
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
