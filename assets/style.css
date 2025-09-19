@@ -14,6 +14,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -635,6 +636,11 @@ section .titleContent::after {
   position: relative;
   left: -37px;
 }
+.contact .education .degree {
+    display: grid;
+    justify-content: center;
+    gap: 28px;
+  }
 .contact .education {
   height: 333px;
   margin-right: 3%;
@@ -771,6 +777,9 @@ footer a {
   .about .aboutContent .aboutDetails .text {
     display: grid;
   }
+  .contact .max-width {
+    margin: 0px;
+  }
   .contact .contactContent {
     display: grid;
     gap: 28px;
@@ -778,9 +787,21 @@ footer a {
   .contact .contactContent .contactDetails,
   .contact .contactContent .education {
     width: 100%;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+  }
+    .contact .contactContent .contactDetails .iconSession{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contactDetails .wrapperIcons {
+  left: 0;
+}
+  .contact .contactContent .education .degree {
+    padding: 10px;
   }
   .contact .education h1 {
     text-align: center;
