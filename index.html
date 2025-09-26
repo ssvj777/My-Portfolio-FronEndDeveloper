@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vijay SS" />
     <title>Vijay Portfolio</title>
     <link
       rel="shortcut icon"
@@ -25,19 +26,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Scroll Button start -->
-    <div class="scrollBtn">
-      <i class="fas fa-angle-double-up"></i>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
     </div>
 
-    <!-- Navbar -->
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
-      <div class="max-width">
+      <div class="nav-container">
         <!-- Navbar Logo -->
         <div class="logo">
-          <a href="#">Portfo<span>lio...</span> </a>
+          <a>Portfolio...</a>
         </div>
 
         <!-- Navbar Toggle Buttton -->
@@ -51,110 +63,123 @@
         </div>
 
         <!-- Navbar List Content -->
-        <div class="navbarList">
+        <div class="nav-menu">
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#Certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
 
-    <!-- Side Navbar -->
-    <nav class="sideNavbar">
-      <div class="sideNavbarList">
+    <!-- Mobile View Navigation Bar -->
+    <nav class="mobile-view-navbar">
+      <div class="mobile-view-navbar-menu-list">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#Certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <!-- Home Section Start -->
     <section class="home" id="home">
-      <div class="max-width">
-        <div class="homeContent">
-          <div class="text1">Hello 👋 I'm</div>
-          <div class="text2">VIJAY SS</div>
-          <div class="text3">And I'm a <span class="typing"></span></div>
-          <a
-            href="https://www.linkedin.com/in/ssvj777/"
-            target="_blank"
-            rel="noreferrer"
-            >I'm looking to hire <i class="fad fa-angle-right"></i>
+      <div class="home-content">
+        <div class="text1">Hello, I'm</div>
+        <div class="text2">VIJAY SS</div>
+        <div class="text3">
+          <span class="role"></span>
+        </div>
+        <p class="home-description">
+          A passionate Front-End Developer focused on creating beautiful,
+          responsive, and user-friendly web applications using modern
+          technologies like React.js, JavaScript, and CSS.
+        </p>
+        <div class="home-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
           </a>
         </div>
       </div>
     </section>
-    <!-- Home Section End -->
 
     <!-- About section start -->
     <section class="about" id="about">
-      <div class="max-width">
-        <h2 class="titleContent">About me</h2>
-
-        <div class="aboutContent">
-          <div class="aboutImage">
-            <img src="./assets/img/Vijay.jpg" alt="VIJAY" />
-            <div>
-              <div class="wrapper">
-                <div class="wrapperIcons">
-                  <a
-                    href="https://www.linkedin.com/in/ssvj777/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div class="iconContent">
-                      <div class="icon">
-                        <i class="fab fa-linkedin"></i>
-                      </div>
-                      <span>LinkedIn </span>
+      <h2 class="title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./assets/img/Vijay.jpg" alt="VIJAY" />
+          <div>
+            <div class="wrapper">
+              <div class="wrapperIcons">
+                <a
+                  href="https://www.linkedin.com/in/ssvj777/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div class="iconContent">
+                    <div class="icon">
+                      <i class="fab fa-linkedin"></i>
                     </div>
-                  </a>
+                    <span>LinkedIn </span>
+                  </div>
+                </a>
 
-                  <a
-                    href="https://github.com/ssvj777"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><div class="iconContent">
-                      <div class="icon">
-                        <i class="fab fa-github"></i>
-                      </div>
-                      <span>Github </span>
+                <a
+                  href="https://github.com/ssvj777"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><div class="iconContent">
+                    <div class="icon">
+                      <i class="fab fa-github"></i>
                     </div>
-                  </a>
+                    <span>Github </span>
+                  </div>
+                </a>
 
-                  <a
-                    href="mailto:vijayssdev@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><div class="iconContent">
-                      <div class="icon">
-                        <i class="fas fa-envelope email-icon"></i>
-                      </div>
-                      <span>Email </span>
+                <a
+                  href="mailto:vijayssdev@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><div class="iconContent">
+                    <div class="icon">
+                      <i class="fas fa-envelope email-icon"></i>
                     </div>
-                  </a>
-                </div>
+                    <span>Email </span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="aboutDetails">
-            <div class="text">
-              I'm a VIJAY SS and
-              <span class="break">I'm a <span class="typing2"></span> </span>
-            </div>
+        </div>
+        <div class="about-details">
+          <div class="about-objective">
+            <h3>Front-End Developer</h3>
+            <p>
+              Seeking a Front-End Developer role where I can leverage my
+              JavaScript (ES6+), React.js skills and modern UI frameworks to
+              build scalable, responsive, and user-friendly web applications.
+              Looking to grow in a tech-driven team and learn more every day.
+            </p>
+          </div>
+          <div class="about-education">
+            <h3>Education</h3>
             <div>
-              <p>
-                Seeking a Front-End Developer role where I can leverage my HTML,
-                CSS, JavaScript (ES6+), React.js sills and modern UI frameworks
-                to build scalable, responsive, and user-friendly web
-                applications. Looking to grow in a tech-driven team and learn
-                more every day.
+              <p class="degree">MSc Cyber Security</p>
+              <p class="college">Bharathiar University, Coimbatore (2025)</p>
+            </div>
+
+            <div>
+              <p class="degree">BSc Computer Science</p>
+              <p class="college">
+                Bharathidasan College of Arts and Science, Erode (2023)
               </p>
             </div>
           </div>
@@ -164,248 +189,279 @@
 
     <!-- Skills section start -->
     <section class="skills" id="skills">
-      <div class="max-width">
-        <h2 class="title titleContent">My Skills</h2>
-        <div class="skillsContent">
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/HTML.png"
-              class="skillIcons"
-              alt="HTML"
-            />
-            <h4>HTML5</h4>
-          </div>
+      <h2 class="title">My Skills</h2>
+      <div class="skills-content">
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/HTML.png"
+            class="skillIcons"
+            alt="HTML"
+          />
+          <h4>HTML5</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/CSS.png"
-              class="skillIcons"
-              alt="CSS"
-            />
-            <h4>CSS3</h4>
-          </div>
+        <div class="skill-card">
+          <img src="./assets/img/skills/CSS.png" class="skillIcons" alt="CSS" />
+          <h4>CSS3</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/javascript.png"
-              class="skillIcons"
-              alt="JavaScript"
-            />
-            <h4>JavaScript</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/javascript.png"
+            class="skillIcons"
+            alt="JavaScript"
+          />
+          <h4>JavaScript</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/React.png"
-              class="skillIcons"
-              alt="React.js"
-            />
-            <h4>React.js</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/React.png"
+            class="skillIcons"
+            alt="React.js"
+          />
+          <h4>React.js</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/Vite.png"
-              class="skillIcons"
-              alt="Vite"
-            />
-            <h4>Vite</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/Vite.png"
+            class="skillIcons"
+            alt="Vite"
+          />
+          <h4>Vite</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/Bootstrap.png"
-              class="skillIcons"
-              alt="Bootstrap"
-            />
-            <h4>Bootstrap</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/Bootstrap.png"
+            class="skillIcons"
+            alt="Bootstrap"
+          />
+          <h4>Bootstrap</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/MaterialUI.png"
-              class="skillIcons"
-              alt="Material UI"
-            />
-            <h4>Material UI</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/MaterialUI.png"
+            class="skillIcons"
+            alt="Material UI"
+          />
+          <h4>Material UI</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/Redux.png"
-              class="skillIcons"
-              alt="Redux"
-            />
-            <h4>Redux</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/Redux.png"
+            class="skillIcons"
+            alt="Redux"
+          />
+          <h4>Redux</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/Python.png"
-              class="skillIcons"
-              alt="Python"
-            />
-            <h4>Python</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/Python.png"
+            class="skillIcons"
+            alt="Python"
+          />
+          <h4>Python</h4>
+        </div>
 
-          <div class="skillCard">
-            <img
-              src="./assets/img/skills/MySQL.png"
-              class="skillIcons"
-              alt="MySQL"
-            />
-            <h4>MySQL</h4>
-          </div>
+        <div class="skill-card">
+          <img
+            src="./assets/img/skills/MySQL.png"
+            class="skillIcons"
+            alt="MySQL"
+          />
+          <h4>MySQL</h4>
         </div>
       </div>
     </section>
 
     <!-- Project section start -->
     <section class="projects" id="projects">
-      <div class="max-width">
-        <h2 class="title titleContent">My Projects</h2>
-        <div class="projectsContents">
-          <div class="projectDetails">
-            <img
-              src="./assets/img/projects/ReactProject.png"
-              alt="React E-Commerce Project"
-            />
-            <div class="projectInfo">
-              <h3>React E-Commerce Project</h3>
-              <p>React.js, Vite, HTML, CSS, JavaScript</p>
-              <a
-                href="https://ssvj777-reactproject.netlify.app/"
-                target="_blank"
-                >View Project</a
-              >
+      <h2 class="title">My Projects</h2>
+      <div class="container">
+        <div class="projects-contents">
+          <div class="project-container">
+            <div class="project-details">
+              <img
+                src="./assets/img/projects/ReactProject.png"
+                alt="React E-Commerce Project"
+              />
+              <div class="projectInfo">
+                <h3>React E-Commerce Project</h3>
+                <p>React.js & JavaScript</p>
+                <div class="project-links">
+                  <a
+                    href="https://ssvj777-reactproject.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">React E-Commerce Project</h3>
+              <p class="project-description">
+                E-commerce website built using React.js & designed with Material
+                UI and React-Bootstrap. Integrated Fake Store API via Axios to
+                fetch product data and implemented CRUD operations using
+                JSON-Server.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
             </div>
           </div>
 
-          <div class="projectDetails">
-            <img
-              src="./assets/img/projects/Shoppiee.png"
-              alt="Shoppiee Website"
-            />
-            <div class="projectInfo">
-              <h3>Shoppiee Website</h3>
-              <p>HTML, CSS, JavaScript</p>
-              <a href="https://ssvj777-shoppiee.netlify.app/" target="_blank"
-                >View Project</a
-              >
+          <div class="project-container">
+            <div class="project-details">
+              <img
+                src="./assets/img/projects/Shoppiee.png"
+                alt="Shoppiee Website"
+              />
+              <div class="projectInfo">
+                <h3>Shoppiee Website</h3>
+                <p>HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                  <a
+                    href="https://ssvj777-shoppiee.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="projectDetails">
-            <img src="./assets/img/projects/avms.jpg" alt="AVMS" />
-            <div class="projectInfo">
-              <h3>Apartment Visitors Management System</h3>
-              <p>HTML, CSS, JavaScript, PHP, MySQL</p>
-              <a href="https://ssvj777-avms.netlify.app/" target="_blank"
-                >View Project</a
-              >
+            <div class="project-info">
+              <h3 class="project-title">Shoppiee Website</h3>
+              <p class="project-description">
+                Developed a responsive front-end e-commerce website. Optimized
+                layout and styling for cross-device compatibility, ensuring
+                consistent experience on desktop and mobile.
+              </p>
             </div>
-          </div>
-
-          <div class="projectDetails">
-            <img
-              src="./assets/img/projects/DEAT.jpg"
-              alt="Digital Evidence System Analyzer Tool"
-            />
-            <div class="projectInfo">
-              <h3>Digital Evidence System Analyzer Tool</h3>
-              <p>Python</p>
-              <a
-                href="https://github.com/ssvj777/Digital-Evidence-Analyzer-Tool"
-                target="_blank"
-                >Source Code</a
-              >
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
             </div>
           </div>
 
-          <div class="projectDetails">
-            <img
-              src="./assets/img/projects/BFA.jpg"
-              alt="Brute Force System Analyzer Tool"
-            />
-            <div class="projectInfo">
-              <h3>Brute Force System Analyzer Tool</h3>
-              <p>Python</p>
-              <a
-                href="https://github.com/ssvj777/Brute-Force-Analyzer-Tool"
-                target="_blank"
-                >Source Code</a
-              >
+          <div class="project-container">
+            <div class="project-details">
+              <img src="./assets/img/projects/avms.jpg" alt="AVMS" />
+              <div class="projectInfo">
+                <h3>Apartment Visitors Management System</h3>
+                <p>JavaScript, PHP, MySQL</p>
+                <div class="project-links">
+                  <a
+                    href="https://ssvj777-avms.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications section start -->
-    <section class="Certifications" id="Certifications">
-      <div class="max-width">
-        <h2 class="title titleContent">My Certifications</h2>
-        <div class="certificationsContent">
-          <div class="certificationDetails">
-            <img
-              src="./assets/img/certifications/FullStack.jpg"
-              alt="Full-Stack Development"
-            />
-            <div class="certificationInfo">
-              <h3>Full-Stack Development</h3>
-              <p>Issued by: Live-wire, Erode</p>
-              <a
-                href="https://drive.google.com/file/d/15FWtCFQK7KZGRsgP5HWh9YAmOjL1IC1P/view?usp=drivesdk"
-                target="_blank"
-                >View Certificate</a
-              >
+            <div class="project-info">
+              <h3 class="project-title">
+                Apartment Visitors Management System
+              </h3>
+              <p class="project-description">
+                Built a full-stack web application to manage apartment visitors
+                record. Implemented CRUD operations using PHP and MySQL for
+                visitor records management.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
             </div>
           </div>
 
-          <div class="certificationDetails">
-            <img
-              src="./assets/img/certifications/Python.jpg"
-              alt="Python Basics"
-            />
-            <div class="certificationInfo">
-              <h3>Python Basics</h3>
-              <p>Issued by: SCALER</p>
-              <a
-                href="https://drive.google.com/file/d/1ASyz31A-iIbyiUpecNphMacixucyUtxm/view?usp=drivesdk"
-                target="_blank"
-                >View Certificate</a
-              >
+          <div class="project-container">
+            <div class="project-details">
+              <img
+                src="./assets/img/projects/DEAT.jpg"
+                alt="Digital Evidence System Analyzer Tool"
+              />
+              <div class="projectInfo">
+                <h3>Digital Evidence System Analyzer Tool</h3>
+                <p>Python</p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/ssvj777/Digital-Evidence-Analyzer-Tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Digital Evidence Analyzer Tool</h3>
+              <p class="project-description">
+                Digital Evidence Analyzer is a Python-based forensic tool built
+                to support forensic investigators in analyzing system data and
+                gathering digital evidence.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Forensics</span>
+              <span class="tech-tag">Security</span>
             </div>
           </div>
 
-          <div class="certificationDetails">
-            <img
-              src="./assets/img/certifications/Networking Basics.jpg"
-              alt="Networking Basics"
-            />
-            <div class="certificationInfo">
-              <h3>Networking Basics</h3>
-              <p>Issued by: CISCO</p>
-              <a
-                href="https://drive.google.com/file/d/1Em7cm9YVzW840tKtvNQ3mJPn0rGahVoL/view?usp=drive_link"
-                target="_blank"
-                >View Certificate</a
-              >
+          <div class="project-container">
+            <div class="project-details">
+              <img
+                src="./assets/img/projects/BFA.jpg"
+                alt="Brute Force System Evidence Analyzer Tool"
+              />
+              <div class="projectInfo">
+                <h3>Brute Force System Evidence Analyzer Tool</h3>
+                <p>Python</p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/ssvj777/Brute-Force-Analyzer-Tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="certificationDetails">
-            <img
-              src="./assets/img/certifications/Cybersecurity.png"
-              alt="Basics of Cyber Security"
-            />
-            <div class="certificationInfo">
-              <h3>Basics of Cyber Security</h3>
-              <p>Issued by: NPTEL</p>
-              <a
-                href="https://drive.google.com/file/d/1V3JBj8_qQiFfPkcFtqSSLbD7167MBz7j/view?usp=sharing"
-                target="_blank"
-                >View Certificate</a
-              >
+            <div class="project-info">
+              <h3 class="project-title">Brute Force Analyzer Tool</h3>
+              <p class="project-description">
+                Brute Force Analyzer is a cybersecurity tool built with Python
+                for analyzing and detecting brute force attacks, enhancing
+                system security measures.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Cybersecurity</span>
+              <span class="tech-tag">Analysis</span>
             </div>
           </div>
         </div>
@@ -414,99 +470,107 @@
 
     <!-- Contact section start -->
     <section class="contact" id="contact">
-      <div class="max-width">
-        <h2 class="title titleContent">Contact Me</h2>
-        <div class="contactContent">
-          <div class="contactDetails">
-            <div class="text">Reach Out to me!</div>
-            <div class="icons">
-              <div class="row">
-                <i class="fas fa-user"></i>
-                <div class="info">
-                  <div class="head">Name</div>
-                  <div class="sub-title">VIJAY SS</div>
-                </div>
-              </div>
-              <div class="row">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
-                  <div class="head">Address</div>
-                  <div class="sub-title">Coimbatore, TamilNadu</div>
-                </div>
-              </div>
-              <div class="row">
-                <i class="fas fa-envelope email-icon"></i>
-                <div class="info">
-                  <div class="email">
-                    <div class="head">Email</div>
-                    <div class="sub-title">
-                      <a href="mailto:vijayssdev@gmail.com" target="_blank"
-                        >vijayssdev@gmail.com</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="iconSession">
-            <div class="text1">Stay Connected</div>
-            <div>
-              <div class="wrapper">
-                <div class="wrapperIcons">
-                  <a
-                    href="https://www.linkedin.com/in/ssvj777/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div class="iconContent">
-                      <div class="icon">
-                        <i class="fab fa-linkedin"></i>
-                      </div>
-                      <span>LinkedIn </span>
-                    </div>
-                  </a>
+      <h2 class="title">Contact Me</h2>
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-details">
+            <h3>Reach Out to me!</h3>
 
-                  <a
-                    href="https://github.com/ssvj777"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><div class="iconContent">
-                      <div class="icon">
-                        <i class="fab fa-github"></i>
-                      </div>
-                      <span>Github </span>
-                    </div>
-                  </a>
-
-                  <a
-                    href="mailto:vijayssdev@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><div class="iconContent">
-                      <div class="icon">
-                        <i class="fas fa-envelope email-icon"></i>
-                      </div>
-                      <span>Email </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-
-          <div class="education">
-            <div>
-              <h1>Education</h1>
-            </div>
-            <div class="degree">
-                <div>
-              <p>MSc <span class="msc"></span></p>
-              <p>Bharathiar University, Coimbatore (2025)</p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
               </div>
               <div>
-              <p>BSc <span class="bsc"></span></p>
-              <p>Bharathidasan College of Arts and Science, Erode (2023)</p>
+                <h4>Email</h4>
+                <a
+                  href="mailto:vijayssdev@gmail.com"
+                  style="color: var(--text-secondary); text-decoration: none"
+                >
+                  vijayssdev@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p style="color: var(--text-secondary); margin: 0">
+                  Coimbatore, Tamil Nadu, India
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div>
+                <h4>LinkedIn</h4>
+                <a
+                  href="https://www.linkedin.com/in/ssvj777/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: var(--text-secondary); text-decoration: none"
+                >
+                  linkedin.com/in/ssvj777
+                </a>
+              </div>
+            </div>
+
+            <div class="social-links" style="margin-top: 2rem">
+              <a
+                href="https://www.linkedin.com/in/ssvj777/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/ssvj777"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="mailto:vijayssdev@gmail.com"
+                class="social-link"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="certifications">
+            <h3>Certifications</h3>
+            <div class="certifications-list">
+              <div class="certification-item">
+                <div class="course-name">Full-Stack Development</div>
+                <div class="course-provider">- Live-wire</div>
+              </div>
+
+              <div class="certification-item">
+                <div class="course-name">Python Basics</div>
+                <div class="course-provider">- SCALER</div>
+              </div>
+
+              <div class="certification-item">
+                <div class="course-name">Networking Basics</div>
+                <div class="course-provider">- CISCO</div>
+              </div>
+
+              <div class="certification-item">
+                <div class="course-name">Basics of Cyber Security</div>
+                <div class="course-provider">- NPTEL</div>
               </div>
             </div>
           </div>
@@ -514,19 +578,14 @@
       </div>
     </section>
 
-    <!-- footer section start -->
-    <footer>
-      <h4>
-        Created By
-        <a
-          href="https://www.linkedin.com/in/ssvj777/"
-          target="_blank"
-          rel="noreferrer"
-          >VIJAY</a
-        >
-        | <i class="fa fa-copyright" aria-hidden="true"></i>
-        <span id="year"></span>
-      </h4>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> | Created By
+          <a href="https://www.linkedin.com/in/ssvj777/">VIJAY SS</a>
+        </p>
+      </div>
     </footer>
 
     <!-- External Typed js script Link -->
